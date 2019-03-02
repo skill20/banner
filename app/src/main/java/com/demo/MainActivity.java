@@ -22,6 +22,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.btn_2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,CustomActivity.class));
+            }
+        });
+
         ImageView iv = findViewById(R.id.image);
         Glide.with(this)
                 .load("http://bpic.588ku.com/element_origin_min_pic/00/00/05/115732f19cc0079.jpg")

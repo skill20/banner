@@ -10,6 +10,7 @@ public class BannerConfig {
     public static final int NUM_INDICATOR_TITLE = 3;
     public static final int CIRCLE_INDICATOR_TITLE = 4;
     public static final int CIRCLE_NUM_INDICATOR_TITLE = 5;
+    public static final int CIRCLE_NUM_INDICATOR = 6;
     /**
      * indicator gravity
      */

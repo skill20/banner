@@ -325,6 +325,10 @@ public class Banner extends FrameLayout implements ViewPager.OnPageChangeListene
                 mNumIndicatorTv.setVisibility(visibility);
                 setTitleStyleUI();
                 break;
+            case BannerConfig.CIRCLE_NUM_INDICATOR:
+                mIndicatorLayout.setVisibility(visibility);
+                mNumIndicatorTv.setVisibility(visibility);
+                break;
         }
     }
 
@@ -480,11 +484,14 @@ public class Banner extends FrameLayout implements ViewPager.OnPageChangeListene
         if (mOnPageChangeListener != null) {
             mOnPageChangeListener.onPageSelected(toRealPosition(position));
         }
-        if (bannerStyle == BannerConfig.CIRCLE_INDICATOR ||
-                bannerStyle == BannerConfig.CIRCLE_INDICATOR_TITLE ||
-                bannerStyle == BannerConfig.CIRCLE_NUM_INDICATOR_TITLE) {
-            mIndicatorImageList.get((lastPosition - 1 + count) % count).setImageResource(mIndicatorUnselectedResId);
-            mIndicatorImageList.get((position - 1 + count) % count).setImageResource(mIndicatorSelectedResId);
+        if (bannerStyle == BannerConfig.CIRCLE_INDICATOR
+                || bannerStyle == BannerConfig.CIRCLE_INDICATOR_TITLE
+                || bannerStyle == BannerConfig.CIRCLE_NUM_INDICATOR_TITLE
+                || bannerStyle == BannerConfig.CIRCLE_NUM_INDICATOR) {
+            mIndicatorImageList.get((lastPosition - 1 + count) % count)
+                    .setImageResource(mIndicatorUnselectedResId);
+            mIndicatorImageList.get((position - 1 + count) % count)
+                    .setImageResource(mIndicatorSelectedResId);
             lastPosition = position;
         }
         if (position == 0) position = count;

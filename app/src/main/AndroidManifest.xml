@@ -24,6 +24,7 @@
         </activity>
 
         <activity android:name=".BannerStyleActivity" />
+        <activity android:name=".CustomActivity" />
     </application>
 
 </manifest>

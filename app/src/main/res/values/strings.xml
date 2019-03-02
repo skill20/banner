@@ -8,6 +8,7 @@
         <item>NUM_INDICATOR_TITLE</item>
         <item>CIRCLE_INDICATOR_TITLE</item>
         <item>CIRCLE_INDICATOR_TITLE_INSIDE</item>
+        <item>CIRCLE_NUM_INDICATOR</item>
     </string-array>
 
     <array name="url">

@@ -61,6 +61,9 @@ public class BannerStyleActivity extends AppCompatActivity implements  AdapterVi
                 banner.setIndicatorGravity(BannerConfig.RIGHT);
                 banner.updateBannerStyle(BannerConfig.CIRCLE_NUM_INDICATOR_TITLE);
                 break;
+            case 6:
+                banner.updateBannerStyle(BannerConfig.CIRCLE_NUM_INDICATOR);
+                break;
         }
     }
 
