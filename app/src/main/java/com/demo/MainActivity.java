@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
+
+
         ImageView iv = findViewById(R.id.image);
         Glide.with(this)
                 .load("http://bpic.588ku.com/element_origin_min_pic/00/00/05/115732f19cc0079.jpg")
