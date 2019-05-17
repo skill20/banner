@@ -30,5 +30,5 @@ dependencies {
     implementation project(path: ':banner')
 
 
-    implementation 'com.gcssloop.widget:rclayout:1.4.1@aar'
+//    implementation 'com.gcssloop.widget:rclayout:1.4.1@aar'
 }
